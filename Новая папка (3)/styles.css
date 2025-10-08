@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eb1111;
+    color: #fff;
+  }
+  
+  .tree-container {
+    text-align: center;
+    position: relative;
+  }
+  
+  .star {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 40px solid gold;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .tree {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid green;
+    position: relative;
+  }
+  
+  .tree::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 120px solid green;
+    position: absolute;
+    top: -80px;
+    left: -20px;
+  }
+  
+  .tree::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 140px solid green;
+    position: absolute;
+    top: -140px;
+    left: -40px;
+  }
+  
+  .decoration {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .decoration:nth-child(1) {
+    top: -20px;
+    left: 30px;
+  }
+  
+  .decoration:nth-child(2) {
+    top: -50px;
+    right: 30px;
+  }
+  
+  .trunk {
+    width: 30px;
+    height: 50px;
+    background-color: brown;
+    margin: 0 auto;
+  }
+  
+  .message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
